@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Narrativa Textil" />
+  <title>Narrativa Textil</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Theme toggle -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+    <span class="material-symbols-rounded" id="themeIcon">dark_mode</span>
+  </button>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Narrativa Textil">
+        <span class="navbar__logo-line">Narrativa</span>
+        <span class="navbar__logo-sub">Textil</span>
+      </a>
+      <nav class="navbar__nav" aria-label="Principal">
+        <a href="index.html#historia" class="navbar__link">Nosotros</a>
+        <a href="index.html#portafolio" class="navbar__link">Catálogo</a>
+        <a href="index.html#proceso" class="navbar__link">Proceso</a>
+        <a href="cotizador.html" class="navbar__back">
+          Solcitar cotización
+        </a>
+      </nav>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu" aria-hidden="true">
+      <a href="#historia" class="navbar__mobile-link">Nosotros</a>
+      <a href="#portafolio" class="navbar__mobile-link">Catálogo</a>
+      <a href="#proceso" class="navbar__mobile-link">Proceso</a>
+      <a href="#contacto" class="navbar__mobile-link navbar__mobile-cta">Solicitar cotización</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" id="heroBg"
+        style="background-image: url('https://images.pexels.com/photos/19400130/pexels-photo-19400130.jpeg?auto=compress&cs=tinysrgb&w=1920')">
+      </div>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+        <h1 class="hero__title fade-up" data-delay="100">Un uniforme<br>no es solo<br>una prenda</h1>
+        <p class="hero__sub fade-up" data-delay="200">Es una herramienta de trabajo que representa<br> tu marca en cada punto de contacto</p>
+        <a href="cotizador.html" class="btn btn--outline fade-up" data-delay="300">Cotizamos tu proyecto</a>
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span class="material-symbols-rounded">arrow_downward</span>
+      </div>
+    </section>
+
+    <!-- ===== HISTORIA ===== -->
+    <section class="historia" id="historia">
+      <div class="historia__parallax historia__parallax--left" data-parallax="up"
+        style="background-image: url('https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=800')">
+      </div>
+      <div class="historia__parallax historia__parallax--right" data-parallax="down"
+        style="background-image: url('https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=800')">
+      </div>
+
+      <div class="historia__content">
+        <span class="section-label fade-up">Nuestra historia</span>
+        <h2 class="historia__title fade-up" data-delay="80">Cada puntada<br>cuenta una historia</h2>
+        <p class="historia__body fade-up" data-delay="160"><strong>Narrativa Textil</strong> es una empresa especializada en la creación de uniformes corporativos de <strong>alta calidad.</strong> Nacimos con la convicción de que la vestimenta profesional no es solo funcional: es el primer mensaje que tu equipo comunica al mundo. Cada prenda que fabricamos lleva consigo la esencia de tu marca, construida hilo a hilo con precisión y propósito.</p>
+
+      </div>
+    </section>
+
+    <!-- ===== PORTAFOLIO ===== -->
+    <section class="portafolio" id="portafolio">
+
+      <div class="portafolio__header">
+        <!-- left: text -->
+        <div class="portafolio__header-text">
+          <span class="section-label fade-up">Portafolio</span>
+          <h2 class="portafolio__title fade-up" data-delay="80">Lo que<br><em>hacemos</em></h2>
+          <p class="portafolio__sub fade-up" data-delay="160">Creamos uniformes que reflejan el profesionalismo de tu marca, cuidando cada detalle con calidad, compromiso y dedicación.</p>
+        </div>
+        <!-- right: image -->
+        <div class="portafolio__header-img fade-up" data-delay="200">
+          <img src="https://images.pexels.com/photos/27572738/pexels-photo-27572738.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Uniformes Narrativa Textil" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- 01 Estampados -->
+      <div class="categoria fade-up">
+        <div class="categoria__header">
+          <div class="categoria__meta">
+            <h3 class="categoria__title">Estampados</h3>
+            <p class="categoria__text">Diseños únicos aplicados con precisión sobre cada prenda. Serigrafía, transfer, sublimación y bordado para que tu marca destaque.</p>
+          </div>
+          <div class="categoria__nav">
+            <button class="cat-btn cat-prev" aria-label="Anterior" disabled>
+              <span class="material-symbols-rounded">arrow_back</span>
+            </button>
+            <button class="cat-btn cat-next" aria-label="Siguiente">
+              <span class="material-symbols-rounded">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+        <div class="cat-wrap">
+          <div class="cat-track">
+            <div class="slide"><div class="slide__img-wrap"><img class="slide__img" src="https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Estampado 1" loading="lazy"/></div></div>
+            <div class="slide"><div class="slide__img-wrap"><img class="slide__img" src="https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Estampado 2" loading="lazy"/></div></div>
+            <div class="slide"><div class="slide__img-wrap"><img class="slide__img" src="https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Estampado 3" loading="lazy"/></div></div>
+            <div class="slide"><div class="slide__img-wrap"><img class="slide__img" src="https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Estampado 4" loading="lazy"/></div></div>
+          </div>
+        </div>
+        <div class="cat-dots"></div>
+      </div>
+
+      <!-- 02 Playeras -->
+      <div class="categoria fade-up">
+        <div class="categoria__header">
+          <div class="categoria__meta">
+            <h3 class="categoria__title">Playeras</h3>
+            <p class="categoria__text">Cortes modernos y tejidos de alto desempeño. Algodón, poliéster, dry fit y mezclas premium para equipar a tu equipo con comodidad y estilo.</p>
+          </div>
+          <div class="categoria__nav">
+            <button class="cat-btn cat-prev" aria-label="Anterior" disabled>
+              <span class="material-symbols-rounded">arrow_back</span>
+            </button>
+            <button class="cat-btn cat-next" aria-label="Siguiente">
+              <span class="material-symbols-rounded">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+        <div class="cat-wrap">
+          <div class="cat-track">
+            <div class="slide"><div class="slide__img-wrap"><img class="slide__img" src="https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Playera 1" loading="lazy"/></div></div>
+            <div class="slide"><div class="slide__img-wrap"><img class="slide__img" src="https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Playera 2" loading="lazy"/></div></div>
+            <div class="slide"><div class="slide__img-wrap"><img class="slide__img" src="https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Playera 3" loading="lazy"/></div></div>
+            <div class="slide"><div class="slide__img-wrap"><img class="slide__img" src="https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Playera 4" loading="lazy"/></div></div>
+          </div>
+        </div>
+        <div class="cat-dots"></div>
+      </div>
+
+      <!-- 03 Diseños -->
+      <div class="categoria fade-up">
+        <div class="categoria__header">
+          <div class="categoria__meta">
+            <h3 class="categoria__title">Diseños</h3>
+            <p class="categoria__text">De la idea al boceto: identidad visual que viste a tu marca. Creamos propuestas a medida que combinan funcionalidad y carácter propio.</p>
+          </div>
+          <div class="categoria__nav">
+            <button class="cat-btn cat-prev" aria-label="Anterior" disabled>
+              <span class="material-symbols-rounded">arrow_back</span>
+            </button>
+            <button class="cat-btn cat-next" aria-label="Siguiente">
+              <span class="material-symbols-rounded">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+        <div class="cat-wrap">
+          <div class="cat-track">
+            <div class="slide"><div class="slide__img-wrap"><img class="slide__img" src="https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Diseño 1" loading="lazy"/></div></div>
+            <div class="slide"><div class="slide__img-wrap"><img class="slide__img" src="https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Diseño 2" loading="lazy"/></div></div>
+            <div class="slide"><div class="slide__img-wrap"><img class="slide__img" src="https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Diseño 3" loading="lazy"/></div></div>
+            <div class="slide"><div class="slide__img-wrap"><img class="slide__img" src="https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Diseño 4" loading="lazy"/></div></div>
+          </div>
+        </div>
+        <div class="cat-dots"></div>
+      </div>
+
+      <!-- 04 Maquila -->
+      <div class="categoria fade-up">
+        <div class="categoria__header">
+          <div class="categoria__meta">
+            <h3 class="categoria__title">Maquila</h3>
+            <p class="categoria__text">Producción a escala con los más altos estándares de calidad. Capacidad para lotes pequeños, medianos y grandes con tiempos de entrega confiables.</p>
+          </div>
+          <div class="categoria__nav">
+            <button class="cat-btn cat-prev" aria-label="Anterior" disabled>
+              <span class="material-symbols-rounded">arrow_back</span>
+            </button>
+            <button class="cat-btn cat-next" aria-label="Siguiente">
+              <span class="material-symbols-rounded">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+        <div class="cat-wrap">
+          <div class="cat-track">
+            <div class="slide"><div class="slide__img-wrap"><img class="slide__img" src="https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Maquila 1" loading="lazy"/></div></div>
+            <div class="slide"><div class="slide__img-wrap"><img class="slide__img" src="https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Maquila 2" loading="lazy"/></div></div>
+            <div class="slide"><div class="slide__img-wrap"><img class="slide__img" src="https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Maquila 3" loading="lazy"/></div></div>
+            <div class="slide"><div class="slide__img-wrap"><img class="slide__img" src="https://images.pexels.com/photos/37330874/pexels-photo-37330874.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Maquila 4" loading="lazy"/></div></div>
+          </div>
+        </div>
+        <div class="cat-dots"></div>
+      </div>
+
+    </section>
+
+    <!-- ===== PROCESO ===== -->
+    <section class="proceso" id="proceso">
+      <div class="proceso__header">
+        <span class="section-label fade-up">Metodología</span>
+        <h2 class="proceso__title fade-up" data-delay="80">Proceso</h2>
+        <p class="proceso__sub fade-up" data-delay="160">Cómo trabajamos contigo, paso a paso</p>
+      </div>
+
+      <ol class="proceso__list">
+        <li class="proceso__step fade-up" data-delay="0">
+          <span class="proceso__num">01</span>
+          <div class="proceso__info">
+            <h3 class="proceso__step-title">Concepto</h3>
+            <p class="proceso__step-text">Entendemos tu visión y necesidades específicas</p>
+          </div>
+        </li>
+        <li class="proceso__step fade-up" data-delay="80">
+          <span class="proceso__num">02</span>
+          <div class="proceso__info">
+            <h3 class="proceso__step-title">Diseño</h3>
+            <p class="proceso__step-text">Creamos propuestas personalizadas para tu marca</p>
+          </div>
+        </li>
+        <li class="proceso__step fade-up" data-delay="160">
+          <span class="proceso__num">03</span>
+          <div class="proceso__info">
+            <h3 class="proceso__step-title">Producción</h3>
+            <p class="proceso__step-text">Fabricamos con los más altos estándares de calidad</p>
+          </div>
+        </li>
+        <li class="proceso__step fade-up" data-delay="240">
+          <span class="proceso__num">04</span>
+          <div class="proceso__info">
+            <h3 class="proceso__step-title">Calidad</h3>
+            <p class="proceso__step-text">Revisamos cada detalle antes de la entrega</p>
+          </div>
+        </li>
+        <li class="proceso__step fade-up" data-delay="320">
+          <span class="proceso__num">05</span>
+          <div class="proceso__info">
+            <h3 class="proceso__step-title">Entrega</h3>
+            <p class="proceso__step-text">Entregamos en tiempo y forma</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="contacto" id="contacto">
+      <div class="contacto__inner">
+
+        <div class="contacto__left fade-up">
+          <span class="section-label">Contáctanos</span>
+          <h2 class="contacto__title">Trabajemos<br><em>juntos</em></h2>
+          <p class="contacto__body">¿Listo para elevar la imagen de tu equipo?<br>Cuéntanos tu proyecto y descubre cómo podemos ayudarte.</p>
+
+          <div class="contacto__data">
+            <a href="mailto:>oscar_lora@outlook.com" class="contacto__data-item">
+              <span class="material-symbols-rounded">mail</span>
+              <div>
+                <span class="contacto__data-label">Email</span>
+                <span class="contacto__data-value">contacto@narrativatextil.com</span>
+              </div>
+            </a>
+            <a href="tel:+525512345678" class="contacto__data-item">
+              <span class="material-symbols-rounded">call</span>
+              <div>
+                <span class="contacto__data-label">Teléfono</span>
+                <span class="contacto__data-value">+52 (55) 1234-5678</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="contacto__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120869.37832837174!2d-98.28698!3d19.0414398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0b44a9be7a5%3A0x1c3218bae2a4e4!2sPuebla%2C%20Pue.%2C%20Mexico!5e0!3m2!1ses!2smx!4v1700000000000"
+              width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Ubicación Narrativa Textil, Puebla">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="contacto__right fade-up" data-delay="120">
+          <form class="form" id="contactForm" novalidate>
+            <div class="form__field">
+              <label class="form__label" for="nombre">Nombre completo</label>
+              <input class="form__input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="mensaje">Mensaje</label>
+              <textarea class="form__input form__textarea" id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto…" rows="5" required></textarea>
+            </div>
+            <button class="btn btn--solid" type="submit">
+              Iniciar conversación
+              <span class="material-symbols-rounded">arrow_forward</span>
+            </button>
+            <p class="form__note">Respondemos en menos de 24 horas.</p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo-line">Narrativa</span>
+        <span class="footer__logo-sub">Textil</span>
+      </div>
+      <p class="footer__copy">© 2026 Narrativa Textil. Todos los derechos reservados.</p>
+      <div class="footer__links">
+        <a href="#historia">Nosotros</a>
+        <a href="#portafolio">Catálogo</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+    <div class="footer__rule" aria-hidden="true"></div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
