@@ -149,6 +149,8 @@
   /* ----------------------------------------
      SUBMIT — mailto + success overlay
   ---------------------------------------- */
+  const overlay  = document.getElementById('successOverlay');
+  const closeBtn = document.getElementById('closeSuccess');
   function doSubmit() {
   const tipoVal  = getVal('tipo');
   const otroSpec = document.getElementById('otroInput')?.value.trim() || '';

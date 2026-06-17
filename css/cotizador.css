@@ -50,7 +50,7 @@
 }
 
 /* ---------- BASE ---------- */
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
 @media (min-width: 768px)  { html { font-size: 17px; } }
 @media (min-width: 1280px) { html { font-size: 18px; } }
 
@@ -98,7 +98,7 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   align-items: center;
   justify-content: space-between;
   height: var(--nav-h);
-  padding: 0 clamp(1.2rem, 5vw, 4rem);
+  padding: 0 clamp(1.2rem, 90vw, 4rem);
   max-width: 1440px;
   margin: 0 auto;
 }
