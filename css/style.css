@@ -183,15 +183,16 @@ button { font-family: inherit; border: none; background: none; cursor: pointer; 
   flex-direction: column;
   gap: 5px;
   width: 24px;
+  z-index: 1100;
 }
 @media (min-width: 900px) { .navbar__burger { display: none; } }
 .navbar__burger span {
   display: block;
   height: 1.5px;
   background: var(--text);
-  gap: 5px;
   border-radius: 2px;
   transition: transform 0.3s, opacity 0.3s;
+  z-index: 1100;
 }
 
 .navbar__mobile {
