@@ -232,7 +232,7 @@ e.preventDefault();
 const nombre = document.getElementById('nombre').value.trim();
 const mensaje = document.getElementById('mensaje').value.trim();
 
-const whatsappNumber = '521XXXXXXXXXX'; // Reemplazar con el número real
+const whatsappNumber = '5212218875017'; // Reemplazar con el número real
 
 const text = [
   'Hola, vengo desde el sitio web de Narrativa Textil.',
