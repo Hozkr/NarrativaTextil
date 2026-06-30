@@ -171,7 +171,7 @@
     'Quedo en espera de su respuesta. Gracias.'
   ].join('\n');
 
-  const whatsappNumber = '5212221234567'; // Cambiar por el número real
+  const whatsappNumber = '5212218875017'; // Cambiar por el número real
 
   const whatsappUrl =
     `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
